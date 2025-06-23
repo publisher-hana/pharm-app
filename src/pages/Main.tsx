@@ -1,14 +1,15 @@
-import React from 'react'
+import { Container } from '@/styles/common';
 
 export const Main = () => {
   return (
-    <div className='container'>
+    <Container>
+      내용
       <div className='left-content'>
         
       </div>
       <aside>
 
       </aside>
-    </div>
+    </Container>
   )
 }
