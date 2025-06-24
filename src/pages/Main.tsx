@@ -1,15 +1,15 @@
-import { Container } from '@/styles/common';
+import Academy from '@/components/home/Academy';
+import { Aside, Container, LeftContent } from '@/styles/common.styled';
 
 export const Main = () => {
   return (
     <Container>
-      내용
-      <div className='left-content'>
-        
-      </div>
-      <aside>
+      <LeftContent>
+          <Academy />
+      </LeftContent>
+      <Aside>
 
-      </aside>
+      </Aside>
     </Container>
   )
 }
