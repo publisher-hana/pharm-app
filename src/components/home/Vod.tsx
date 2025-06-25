@@ -1,4 +1,3 @@
-import React from 'react'
 import { BtnAll, MainSection,VodCard } from './home.style'
 import { SecTitle } from '@/styles/common.style'
 import Slider from 'react-slick'

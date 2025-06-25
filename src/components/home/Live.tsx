@@ -1,4 +1,3 @@
-import React from 'react'
 import { GridCol3, MainSection, VodCard } from './home.style'
 import { Link } from 'react-router-dom'
 import { SecTitle } from '@/styles/common.style'
