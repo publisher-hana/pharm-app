@@ -1,6 +1,7 @@
 html,body{
 	font-family: 'Pretendard', sans-serif;
 	line-height: 1.5;
+  color:#1F1F1F;
 }
 a {
   color: inherit;
@@ -63,13 +64,14 @@ i,em{font-style: normal;}
   --lnner-right-width:270px;
   --cont-top:120px;
   --primary-color:#00befc;
+  --c-b-base:#1F1F1F;
   --c-gray:#666;
   --c-light-gray:#939393;
   --c-gradient: linear-gradient(85.66deg, #01affe 33.71%, #4bde97 75.67%);
   --c-orange:#fc7900;
   --c-boldgreen:#23425c;
   --red-color:#ff0303;
-  --form-border:#ccc;
+  --border-gray:#ccc;
   --txt-lh:1.4;
   --cont-gap:60px;
   --base-gap:40px;
