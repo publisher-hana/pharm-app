@@ -68,3 +68,32 @@ export const AsideStyle = styled.aside`
     margin-bottom:40px;
   }
 `
+export const Menu = styled.button`
+  display:block;
+  width:40px;
+  height:40px;
+  display:flex;
+  padding:10px;
+  flex-direction:column;
+  justify-content:center; 
+  gap:6px;
+  background:var(--c-blue);
+  border-radius:10px;
+  &:before, &:after{
+    content:'';
+    height:2px;
+    background:#fff;
+  }
+  &:before{
+    width:24px;
+  }
+  .bar{
+    display:block;
+    width:20px;
+    height:2px;
+    background:#fff;
+  }
+  &:after{
+    width:14px;
+  }
+`

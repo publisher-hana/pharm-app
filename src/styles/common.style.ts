@@ -13,4 +13,5 @@ export const LeftContent = styled.div`
 export const SecTitle = styled.h2`
   margin-bottom:16px;
   font-size:24px;
+  color:var(--c-b-base);
 ` 

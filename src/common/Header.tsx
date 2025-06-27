@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { HeaderStyle,NavStyle, HeaderRight, Search } from "./comLayout.style"
+import { HeaderStyle,NavStyle, HeaderRight, Search, Menu } from "./comLayout.style"
 import { IoIosSearch } from "react-icons/io";
 const Header = () => {
   return (
@@ -22,7 +22,7 @@ const Header = () => {
             <input type="text"  className="input-sch"/>
             <button className="btn-sch"><IoIosSearch /></button>
           </Search>
-
+          <Menu><span className="bar"></span></Menu>
         </HeaderRight>
       </div>
     </HeaderStyle>

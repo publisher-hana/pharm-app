@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { AsideStyle } from './comLayout.style'
 import TheShopBox from '@/components/aside/TheShopBox';
+import Community from '@/components/aside/Community';
 
 export const Aside = () => {
   const location = useLocation(); 
@@ -11,6 +12,9 @@ export const Aside = () => {
         <>
          <section>
           <TheShopBox />
+         </section>
+         <section>
+          <Community />
          </section>
         </>
       )

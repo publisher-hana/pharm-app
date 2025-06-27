@@ -19,3 +19,16 @@ export const TheShopBoxStyle = styled.div`
     }
   }
 `
+export const CommunityStyle = styled.div`
+  .top{
+     display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+ 
+`
+
+export const AsideTtitle = styled.h2`
+  color:var(--c-b-base);
+  font-size:18px;
+`
