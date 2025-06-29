@@ -106,6 +106,9 @@ ${({ type }) => type === "recomm" &&
   `}
 padding:6px;
 box-sizing:border-box;  
+a:hover strong{
+  text-decoration:underline;
+}
 .info{
     strong{
       display:block;
@@ -113,6 +116,7 @@ box-sizing:border-box;
       overflow: hidden;
       text-overflow: ellipsis;  
       display: -webkit-box;
+      font-size:18px;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
     }
@@ -170,7 +174,7 @@ export const PickStyle = styled.div`
   }
 `   
 interface LabelProps {
-  $mode?: "gradient" | "orange" | "boldGreen" | "gray" | "lineGray";
+  $mode?: "blue" | "orange" |  "green" | "boldGreen" | "gray" | "lineGray";
 }
 export const RoundStyle = styled.span<LabelProps>`
   display:inline-block;
@@ -185,6 +189,7 @@ export const RoundStyle = styled.span<LabelProps>`
   box-sizing:border-box;
   transition: var(--trans-3s);
   font-size:14px;
+  text-align:center;
   & + span{
     margin-left:4px;
   }
@@ -193,14 +198,18 @@ export const RoundStyle = styled.span<LabelProps>`
   }
   ${(props) => {
     switch (props.$mode) {
-      case "gradient":
+      case "blue":
         return css`
-         background:var(--c-gradient);
+         background:var(--c-blue);
         `;
       case "orange":
         return css`
           background:var(--c-orange);
         `;
+      case "green":
+        return css`
+          background:#28BCAA;
+       `;
       case "boldGreen":
         return css`
           background:var(--c-boldgreen);

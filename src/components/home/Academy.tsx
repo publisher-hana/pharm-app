@@ -1,4 +1,5 @@
-import { SecTitle } from '@/styles/common.style'
+/** @jsxImportSource @emotion/react */
+import { HoverType, SecTitle } from '@/styles/common.style'
 import Slider from "react-slick";
 import { MainSection,AcademyCard,BtnAll } from './home.style';
 import { Link } from 'react-router-dom';
@@ -18,7 +19,7 @@ const Academy = () => {
         <BtnAll>전체보기</BtnAll>
         <Slider {...settings}>
           <div>
-            <Link to="/">
+            <Link to="/" css={HoverType.underline}>
               <AcademyCard>
                 <div className='top'>
                   <span className='label-class'><img src='/pharm-app/images/vod/label-class.png' alt="class" /></span>
@@ -35,7 +36,7 @@ const Academy = () => {
             </Link>
           </div>
           <div>
-            <Link to="/">
+            <Link to="/" css={HoverType.underline}>
               <AcademyCard bgColor="lightgreen">
                   <div className='top'>
                     <span className='label-package'><img src='/pharm-app/images/vod/label-package.png' alt="package class" /></span>
@@ -52,7 +53,7 @@ const Academy = () => {
             </Link>
           </div>
           <div>
-            <Link to="/">
+            <Link to="/" css={HoverType.underline}>
               <AcademyCard>
                 <div className='top'>
                   <span className='label-class'><img src='/pharm-app/images/vod/label-class.png' alt="class" /></span>
@@ -69,7 +70,7 @@ const Academy = () => {
             </Link>
           </div>
           <div>
-            <Link to="/">
+            <Link to="/" css={HoverType.underline}>
               <AcademyCard>
                 <div className='top'>
                   <span className='label-class'><img src='/pharm-app/images/vod/label-class.png' alt="class" /></span>
@@ -86,7 +87,7 @@ const Academy = () => {
             </Link>
           </div>
           <div>
-            <Link to="/">
+            <Link to="/" css={HoverType.underline}>
               <AcademyCard>
                 <div className='top'>
                   <span className='label-class'><img src='/pharm-app/images/vod/label-class.png' alt="class" /></span>

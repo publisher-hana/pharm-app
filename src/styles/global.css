@@ -66,9 +66,10 @@ i,em{font-style: normal;}
   --input-h:40px;
   --primary-color:#00befc;
   --c-blue:#2281FF;
+  --c-blue-strong:#0057FF;
   --c-b-base:#1F1F1F;
   --c-gray:#666;
-  --c-light-gray:#939393;
+  --c-light-gray:#B4B4B5;
   --c-gradient: linear-gradient(85.66deg, #01affe 33.71%, #4bde97 75.67%);
   --c-orange:#fc7900;
   --c-boldgreen:#23425c;

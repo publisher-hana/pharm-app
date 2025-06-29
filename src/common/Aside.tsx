@@ -2,6 +2,8 @@ import { useLocation } from 'react-router-dom';
 import { AsideStyle } from './comLayout.style'
 import TheShopBox from '@/components/aside/TheShopBox';
 import Community from '@/components/aside/Community';
+import BannerItem from './BannerItem';
+import Quick from '@/components/aside/Quick';
 
 export const Aside = () => {
   const location = useLocation(); 
@@ -10,16 +12,43 @@ export const Aside = () => {
       case '/':
         return ( 
         <>
-         <section>
-          <TheShopBox />
-         </section>
-         <section>
-          <Community />
-         </section>
+          <section>
+            <TheShopBox />
+          </section>
+          <section>
+            <Community />
+          </section>
+          <BannerItem img="/pharm-app/images/banner/banner1.png"/>
+          <BannerItem img="/pharm-app/images/banner/banner2.png"/>
+          <section>
+            <Quick />
+          </section>
+          <BannerItem img="/pharm-app/images/banner/banner3.jpg"/>
+          <BannerItem img="/pharm-app/images/banner/banner4.png"/>
+        </>
+      )
+      case '/class':
+        return ( 
+        <>
+          <BannerItem img="/pharm-app/images/banner/banner1.png"/>
+          <BannerItem img="/pharm-app/images/banner/banner2.png"/>
+        </>
+      )
+      case '/class/replay':
+        return ( 
+        <>
+          <BannerItem img="/pharm-app/images/banner/banner1.png"/>
+          <BannerItem img="/pharm-app/images/banner/banner2.png"/>
+        </>
+      )
+       case '/news':
+        return ( 
+        <>
+          <BannerItem img="/pharm-app/images/banner/banner1.png"/>
         </>
       )
        default:
-        return null; // 다른 경로에서는 Aside를 비우거나 다른 컴포넌트 렌더링
+        return null; 
     }
   };
 
