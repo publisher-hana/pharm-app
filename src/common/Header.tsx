@@ -32,10 +32,12 @@ const Header = () => {
                     </li>
                 </Submenu>
             </li>
-            <li><Link to="" className="link">팜빌 클래스</Link></li>
+            <li><Link to="/pharmvill-class" className="link">
+                팜빌 클래스
+              </Link></li>
             <li><Link to="" className="link">킴스온라인</Link></li>
             <li><Link to="/news" className="link">제약뉴스</Link></li>
-            <li><Link to="" className="link">커뮤니티</Link></li>
+            <li><Link to="/community" className="link">커뮤니티</Link></li>
           </ul>
         </NavStyle>
         <HeaderRight>

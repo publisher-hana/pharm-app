@@ -215,3 +215,108 @@ export const AllMenuStyle = styled.menu`
   }
 
 `
+
+export const FooterStyle = styled.footer` 
+  border-top:1px solid var(--border-gray);
+  background:#fff;
+  .footer-inner{
+    width:var(--cont-width);
+    margin:0 auto;
+    padding:60px 0;
+  }
+  .footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .copy {
+    margin-top: 20px;
+    font-size:14px;
+    color: var(--c-light-gray);
+  }
+`
+export const SiteLink = styled.div`
+  margin-top: 14px;
+  margin-bottom: 10px;
+  a {
+    display: inline-block;
+    position: relative;
+    padding: 0 16px;
+    font-size:16px;
+    font-weight:normal;
+    color: #5d5d5d;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    & + a:before {
+      content: "";
+      position: absolute;
+      top:50%;
+      transform:translateY(-50%);
+      left:0;
+      width: 1px;
+      height: 10px;
+      background-color: var(--c-gray);
+    }
+    &.point{
+      color:var(--primary-color);
+    }
+  }
+  `
+  
+export const FamliySite = styled.div`
+  position: relative;
+  width: 228px;
+  button.site_box {
+    position: relative;
+    width: 100%;
+    line-height: 33px;
+    padding: 4px 14px;
+    background-color: #f2f2f2;
+    text-align: left;
+    font-size:16px;
+    box-sizing:border-box;
+    &:after {
+      content: "";
+      display:block;
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      right:12px;
+      width: 12px;
+      height: 12px;
+      background-image:url('/pharm-app/images/ico_common.png');
+      background-position: -200px -4px;
+    }
+  }
+  .sites {
+    display: none;
+    position: absolute;
+    bottom: 41px;
+    left: 0;
+    width: 100%;
+    border: 1px solid var(--border-gray);
+    background-color: #fff;
+    padding: 10px 0;
+    box-sizing: border-box;
+    a {
+      display: block;
+      padding: 6px 10px;
+      font-size:16px;
+      &:hover{
+        color:var(--primary-color);
+      }
+    }
+    &.open {
+      display: block;
+    }
+  }
+`
+export const Address = styled.address`
+  color: var(--c-light-gray);
+  font-style:normal;
+  font-size:14px;
+  & > span {
+    margin-right: 16px;
+  }
+`

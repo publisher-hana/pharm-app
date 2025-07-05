@@ -157,3 +157,257 @@ export const SchGrp = styled.div`
   }
  
 `
+export const VisualPharm = styled.div`
+  width:1920px;
+  margin:0 auto;
+  height:198px;
+  background-image:url('/pharm-app/images/visual/visual-class.jpg');
+`
+export const PharmSection = styled.section`
+  margin-bottom:80px;
+  &:last-of-type{
+    margin-bottom:0;
+  }
+`
+export const RecentVd =styled.div`
+  a:hover{
+   .title{
+    text-decoration:underline;
+    }
+  }
+  .item{
+    .ico-play{
+    display:block;
+    width:16px;
+    height:16px;
+    margin-bottom:10px;
+    background-image:url('/pharm-app/images/ico/icon-play.png');
+    }
+     .title{
+      display:block;
+      margin-bottom:10px;
+      font-size: 18px;
+    }
+    p{
+      color:var(--primary-color);
+      font-size: 16px;
+    }
+  }
+  
+`
+export const PharmArticle = styled.article`
+  margin-bottom:40px;
+  padding:20px;
+  background:#FBF7F1;
+  .top-class-area{
+    display:flex;
+    justify-content:flex-end;
+    .ico-top-class{
+      display:flex;
+      justify-content:flex-end;
+      width:75px;
+      height:24px;
+      background:url('/pharm-app/images/ico/icon-class.png') no-repeat;
+      background-size:cover;
+    }
+  }
+  .content-wrap{
+    display:flex;
+    gap:16px;
+    .icon{
+       width:62px;
+      height:62px;
+      background:url('/pharm-app/images/ico/icon-class1.png') no-repeat;
+      &.qna{
+        background:url('/pharm-app/images/ico/icon-class2.png') no-repeat;
+      }
+    }
+    .content{
+      .title{
+        font-size:20px;
+      }
+      .desc{
+        font-size:14px;
+        color:var(--c-gray);
+      }
+      .tail{
+        font-size:12px;
+        color:var(--c-gray);
+        span{
+          font-weight:bold;
+        }
+      }
+      .vod-area{
+        margin-top:20px;
+      }
+    }
+  }
+`
+export const Video = styled.div`
+  width:100%;
+  height:487px;
+  overflow:hidden;
+  margin-bottom:var(--base-gap);
+  iframe{ 
+    width:100%;
+    height:100%;
+  }
+`   
+export const VodTitle = styled.div`
+  margin-bottom:20px;
+  .cate{
+    --h:26px;
+    padding:0px 10px;
+    line-height:24px;
+    font-size:16px
+    font-weight:600;
+  }
+  h3{
+    margin:8px 0;
+    font-size:24px;
+    font-weight:500;
+  }
+  .hash span{
+    display:inline-block;
+    margin-right:4px;
+    font-size:14px;
+    font-weight:400;
+    color:var(--c-gray);
+  }
+`
+export const VodCont = styled.ul`
+  em{
+    color:var(--c-gray);
+    margin-right:12px;
+    font-size:14px;
+  }
+  span{
+    font-size:14px;
+    a{
+      text-decoration:underline;
+    }
+  }
+  `
+  export const ProList = styled.ul`
+  position:relative;
+  margin-top:var(--base-gap);
+  border-top:1px solid var(--border-gray);
+  & >li{
+    position:relative;
+    height:122px;
+    padding:20px 0;
+    border-bottom:1px solid var(--border-gray);
+    overflow:hidden;
+    figure{
+      flex-shrink:0;
+      width:121px;
+      height:117px;
+      overflow:hidden;
+    }
+    &.open{
+      height:auto;
+    }
+  }
+`
+export const ProfileStyle = styled.div`
+  display:flex;
+  align-items:center;
+  gap:20px;
+`
+
+export const ListInfo = styled.div`
+  strong{
+    display:block;
+    margin-bottom:4px;
+    font-size:20px;
+    font-weight:400;
+  }
+  .belong{
+    display:block;
+    margin-bottom:18px;
+    font-size:14px;
+    color:var(--c-gray);
+  }
+  .info-list{
+    color:var(--c-gray);
+    &>li{
+      font-size:14px;
+      span{
+        margin-left:10px;
+        color:var(--primary-color);
+      }
+      ul{
+        margin-top:10px;
+      }
+    }
+  }
+`
+export const BtnToggle = styled.button`
+   position:absolute;
+   bottom:20px;
+   right:20px;
+   &:after{
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:8px;
+    margin-top:-8px;
+    margin-left:6px;
+    vertical-align:middle;
+    border-left:1px solid #000;
+    border-bottom:1px solid #000;
+    transform:rotate(-45deg);
+   }
+  &.open:after{
+   margin-top:2px;
+   transform:rotate(135deg);
+  }
+`
+export const ProIntroBox = styled.div`
+  margin:40px 0px 20px;
+  border:1px solid var(--border-gray);
+  padding:40px 20px;
+  .program-list{
+    padding:30px;
+    background:#F2F2F2;
+    font-size:14px;
+    .time{
+      margin-right:20px;
+      letter-spacing:-0.06rem;
+      color:var(--primary-color);
+      text-decoration:underline;
+    }
+  }
+`
+export const FavRow = styled.div`
+  text-align:center;
+  .num{
+    font-size:14px;
+  }
+`
+
+export const Guidebox = styled.div`
+  margin:20px 0px 40px;
+  padding:20px;
+  border:1px solid var(--border-gray);
+  font-size:16x;
+  strong{
+    display:block;
+    position:relative;
+    margin-bottom:12px;
+    padding-left:28px;
+    font-size:18px;
+    &:before{
+      content:"";
+      position:absolute;
+      top:50%;
+      left:0;
+      width:18px;
+      height:18px;
+      transform:translateY(-50%);
+      background-image:url('/pharm-app/images/ico_common.png');
+      background-position:-32px -117px;
+      background-repeat:no-repeat;
+    }
+  }
+`

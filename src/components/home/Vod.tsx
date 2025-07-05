@@ -66,7 +66,7 @@ const Vod = () => {
         <Slider {...settings}>
           {vodList.map((vod) => (
             <VodCard key={vod.id}>
-              <Link to={vod.link}>
+              <Link to="/class/classview">
                 <div>
                   <img src={vod.thumbnail} alt="vod 썸네일" />
                 </div>

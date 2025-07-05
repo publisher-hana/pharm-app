@@ -34,7 +34,7 @@ const VodListSection = ({ list, initialVisible = 6, showMoreButton = true }: Vod
       <GridCol3>
         {visibleVodList.map((vod) => (
           <VodCard key={vod.id} type="recomm">
-            <Link to={vod.link}>
+            <Link to="/class/classview">
               <div>
                 <img src={vod.thumbnail} alt="vod 썸네일" />
               </div>

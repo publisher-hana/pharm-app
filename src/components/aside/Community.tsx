@@ -1,14 +1,12 @@
 /** @jsxImportSource @emotion/react */
-import { AsideTtitle, BtnAll, CommunityStyle } from "./aside.style"
+import { CommunityStyle } from "./aside.style"
 import { Link } from "react-router-dom"
-import { ClampText, HoverType, IcoArr } from "@/styles/common.style"
+import { ClampText, HoverType} from "@/styles/common.style"
+import AsideTitleArea from "./AsideTitleArea"
 const Community = () => {
   return (
     <CommunityStyle>
-      <div className='top'>
-        <AsideTtitle>커뮤니티 베스트 글</AsideTtitle>
-        <BtnAll>전체보기<IcoArr /></BtnAll>
-      </div>
+      <AsideTitleArea title="커뮤니티 베스트 글" btntext="전체보기" />
       <ul className="cont">
         <li>
           <Link to="/" css={HoverType.underline}>

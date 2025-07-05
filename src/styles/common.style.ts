@@ -51,9 +51,11 @@ export const IcoArr = styled.span`
   display:inline-block;
   width:6px;
   height:6px;
-  border-right:1px solid var(--c-gray);
-  border-bottom:1px solid var(--c-gray);
+  margin-top:-2px;
+  border-right:2px solid var(--c-gray);
+  border-bottom:2px solid var(--c-gray);
   transform:rotate(-45deg);
+  vertical-align:middle;
 `
 export const ClampText = {
   line1: css`
@@ -100,6 +102,30 @@ export const ListCol2 = styled.ul`
       width:640px;
       &:hover{
         text-decoration:underline;
+      }
+    }
+  }
+`
+export const GridCol4 = styled.div`
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:16px;
+`
+export const FilterLine = styled.div`
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-bottom:16px;
+  border-bottom:2px solid var(--c-b-base);
+  .title{
+    font-size:16px;
+    font-weight:500;
+  }
+  .sort{
+    button{
+      color:var(--c-gray);
+      &.on{
+        font-weight:bold;
       }
     }
   }

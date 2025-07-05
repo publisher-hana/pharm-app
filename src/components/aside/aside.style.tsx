@@ -19,14 +19,14 @@ export const TheShopBoxStyle = styled.div`
     }
   }
 `
-export const CommunityStyle = styled.div`
-  .top{
-     display:flex;
+export const TitleAreaStyle= styled.div`
+    display:flex;
     align-items:center;
     justify-content:space-between;
     padding-bottom:16px;
     border-bottom:2px solid var(--c-b-base);
-  }
+`
+export const CommunityStyle = styled.div`
   .cont li a{
     margin:20px 0;
     display:flex;
@@ -68,12 +68,13 @@ export const CommunityStyle = styled.div`
 `
 export const AsideTtitle = styled.h2`
   color:var(--c-b-base);
-  font-size:22px;
+  font-size:20px;
   `
   export const BtnAll = styled.button`
   color:var(--c-gray);
   font-weight:500;
   font-size:14px;
+   color:var(--c-b-base);
   span{
     margin-left:6px;
     vertical-align:middle;
@@ -125,5 +126,43 @@ export const QuickStyle = styled.div`
     }
       
   }
-
+`
+export const RecentList = styled.div`
+  margin-bottom:40px;
+`
+export const List = styled.ul`
+  padding-top:10px;
+  li{
+    margin:10px 0;
+    a{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      &:hover{
+        .title{
+          text-decoration:underline;
+        }
+      }
+    }
+    figure{
+      width:90px;
+      height:54px;
+      flex-shrink: 0;
+      img{
+        object-fit: cover; 
+        display: block;
+      }
+    }
+    .info{
+      .title{
+        display:block;
+        font-size:13px;
+      }
+      span{
+        display:block;
+        font-size:12px;
+        color:var(--c-gray);
+      }
+    }
+  }
 `
